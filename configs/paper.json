@@ -1,0 +1,34 @@
+{
+  "schema": "paper_experiments",
+  "default_panels": [
+    "original",
+    "fresh_generators",
+    "model_controls",
+    "matched_actors",
+    "memory",
+    "memory_states",
+    "continuation",
+    "cross_generator",
+    "proposal_refinement",
+    "timing",
+    "stress",
+    "score_components"
+  ],
+  "seeds": [
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208
+  ],
+  "assets_manifest": "assets/manifest.json",
+  "condition_definitions": "configs/conditions.json",
+  "configuration_location": "configs/panels",
+  "manifest_generation": "Explicit command only; newly generated panels are new experiments",
+  "true_force_access": "real execution/data labels/offline references only",
+  "all_failures_reported": true,
+  "one_package_namespace": "cogp"
+}

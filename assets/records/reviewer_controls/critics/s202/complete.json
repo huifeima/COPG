@@ -1,0 +1,702 @@
+{
+  "checkpoints": {
+    "execution": {
+      "path": "<PROJECT_ROOT>/runs/HCCG_Reviewer_v178/critics/s202/execution.pt",
+      "sha256": "bc5a2dc482463ad901e26966d9585d5ed89b5d272f184feb6ec8c0f4033fbfed"
+    },
+    "physical": {
+      "path": "<PROJECT_ROOT>/runs/HCCG_Reviewer_v178/critics/s202/physical.pt",
+      "sha256": "a417a1b96bcf9367f02327452fc2081d5266e93f7da4b97680ea45d028ccba58"
+    }
+  },
+  "identity": {
+    "checkpoint_selection": "final_update",
+    "config": {
+      "E": 64,
+      "architecture": "new matched pooled physical backbone; not old PPO critic retraining",
+      "batch_size": 128,
+      "candidate_limit": 4,
+      "continuation": "finish original E64 commitment before frozen HCCG",
+      "decision_indices": [
+        0,
+        2
+      ],
+      "decisions": [
+        0,
+        2
+      ],
+      "hidden": 64,
+      "horizons": [
+        12,
+        64
+      ],
+      "lr": 0.0003,
+      "save_every": 500,
+      "selection": "final fixed update",
+      "train_worlds": 32,
+      "updates": 5000,
+      "validation_worlds": 8,
+      "weight_decay": 0.0001
+    },
+    "dims": {
+      "dog_side_dim": 43,
+      "global_side_dim": 21,
+      "hidden": 64
+    },
+    "executor_side": "executor fields plus geometric task-membership summaries",
+    "feature_schema": "v178_execution_state_v1",
+    "model_kind": "pooled_physical_backbone_matched_side_v1",
+    "paired_batch_seed": 178202,
+    "physical_side": "deterministic x-only polynomial/trigonometric expansion",
+    "schema": "v178_matched_critic_v1",
+    "seed": 202,
+    "study_hash": "a2ebdf4d9b0d619c292c907f9d16e9ca45339092bf100694f799925880303969",
+    "target_normalization": {
+      "mean": 63.512523047259485,
+      "std": 35.331030894414305
+    },
+    "train_manifest": [
+      {
+        "case": {
+          "case_id": "v178_train_c00_w000",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "compact",
+          "seed": 178100000000000,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "95028d7becab3668b19e1334df84dc0fd06bd32d8184b4ead045ae920a82cb0e"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c00_w001",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "compact",
+          "seed": 178100000000001,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "d1270f16ee76502e1d9c1018b3f002a500a123ba6a36cf17dc8a113384f885fa"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c00_w002",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "compact",
+          "seed": 178100000000002,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "3bda2356780113f57b9ed6c7f41684f72b6a5befb40af3412cc69129ba7d44da"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c00_w003",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "compact",
+          "seed": 178100000000003,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "43138172c1c38cd10587d069e5c460b73d55c46bb9a13eac090336e9a8f23eba"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c00_w004",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "compact",
+          "seed": 178100000000004,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "ec9d173f03fc6ecb1cdbc289605d94a53fd53321829153534f4733dd3d83b16d"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c00_w005",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "compact",
+          "seed": 178100000000005,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "4b54db1a3af992ee08d34d8b38d2e40223302406b3feed9e685e02b062909cce"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c00_w006",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "compact",
+          "seed": 178100000000006,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "fed3a82b57e42529df7497f7c8391830d99314562e4e6232d253eefb8c63beae"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c00_w007",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "compact",
+          "seed": 178100000000007,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "2e6efe5d163120cfa22e197da7f6d6d55df268f942601fa4ba2f00e72205c908"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c01_w000",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "double_outlier",
+          "seed": 178100000001000,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "26711bbd7d4de9425b43d7fdbb9ced73b18c244af5f3fde1c9d564b6ec6b2b2a"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c01_w001",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "double_outlier",
+          "seed": 178100000001001,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "b6fa5d506339325548f28533c3c22a8239f00e5bdba3e7fd1c156d13211c6961"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c01_w002",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "double_outlier",
+          "seed": 178100000001002,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "60248f3c0aa25d1e51a50256151bd12121ad51c50c33cc6ec9d928663cb9ebee"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c01_w003",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "double_outlier",
+          "seed": 178100000001003,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "4cc5dceceb30a0b6c1fe49ad1d5f471573b0ef0da8d3e2cbb6f17f069a97e24e"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c01_w004",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "double_outlier",
+          "seed": 178100000001004,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "2f6cb644c85c25fcbf9280cf276e3790167771a9b5e2b694518419dc458fd832"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c01_w005",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "double_outlier",
+          "seed": 178100000001005,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "acff73d5cfd24f20c37d75f507d0ae7badeac1b3165512fafddd23ece3dbff21"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c01_w006",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "double_outlier",
+          "seed": 178100000001006,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "d349d9de67561330b3c0a9927cb99bf2ad4afaaebf0f3be137c76d05f1950b0d"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c01_w007",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "double_outlier",
+          "seed": 178100000001007,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "1a853c2e2bf60174a363839c05e559a3eb75a9b3f05604b2ae555f68a2d093b4"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c02_w000",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "single_outlier",
+          "seed": 178100000002000,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "2166f14ebf4dcdcead19adaa8863ec4655665289cc9e2ceb22a0abd24f89b1e2"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c02_w001",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "single_outlier",
+          "seed": 178100000002001,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "e9b36d38158009c05d13cf3a09f6487b0875bcad78efd66801a2e0891578f16e"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c02_w002",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "single_outlier",
+          "seed": 178100000002002,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "6ac21ec8b51f5b8451e11e2e667b104d039689269ca6f914eb38aa1b67a9f891"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c02_w003",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "single_outlier",
+          "seed": 178100000002003,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "c7d65d2184372623b8b40f6711ba1f4f61f4a6c7d4814bb6e99512933e494eb0"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c02_w004",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "single_outlier",
+          "seed": 178100000002004,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "6728205b0136b1feffc9d9b11d10d208063e8b33515efe359f522b04f7aa4690"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c02_w005",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "single_outlier",
+          "seed": 178100000002005,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "59a683fa097dd280a11c474793ba7ebdad717d6e061cf02a76e01da785d304fb"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c02_w006",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "single_outlier",
+          "seed": 178100000002006,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "ffbfcd7aca90e9d3d6597fdbceec23ce6eb49456adf6e85335fcafad77829df4"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c02_w007",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "single_outlier",
+          "seed": 178100000002007,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "376f83dbc9d217a163118eb36ff5ebd306a09a1eee123966e513d23c46d04b7d"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c03_w000",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "split",
+          "seed": 178100000003000,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "fbdb18a6659c6348ff6dbdc901b525a8a939ab07b5b6c55738c8021e435e6821"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c03_w001",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "split",
+          "seed": 178100000003001,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "78144f20c56f4af0e4ef658093674b3c2daf04730e3effb5313687c8edb0e103"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c03_w002",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "split",
+          "seed": 178100000003002,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "7ee08b2a35cf86d28442002f9512b23c42d268e4d5c88c51dcc603582ff25e42"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c03_w003",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "split",
+          "seed": 178100000003003,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "f2d0cb98fbb41e6f6480a0a5d79edd7c32fdf3375951446b28ad97af76e0a884"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c03_w004",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "split",
+          "seed": 178100000003004,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "edbe5ea60023370d204c5cbb4cca844ebb443e70c7c8f6432ae5513c0972b149"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c03_w005",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "split",
+          "seed": 178100000003005,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "8d9b8e398299585f21d43dcdc7a3e95d32cd708febf5dad6245bd5d42e17a73c"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c03_w006",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "split",
+          "seed": 178100000003006,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "9ebc83c794c6fe9a5f6db3a39e97f70a37a1eef6ea332528654d9df09708ef7b"
+      },
+      {
+        "case": {
+          "case_id": "v178_train_c03_w007",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "split",
+          "seed": 178100000003007,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "5b1c12833f5f9c9fcbac2db0b3dec4411de30f097fe59940599d08de2c9b8a32"
+      }
+    ],
+    "validation_manifest": [
+      {
+        "case": {
+          "case_id": "v178_validation_c00_w000",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "compact",
+          "seed": 178200000000000,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "2497bf296352e4519e391d74a82bbea6cee44ce701a914db49b26d106a3ab44d"
+      },
+      {
+        "case": {
+          "case_id": "v178_validation_c00_w001",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "compact",
+          "seed": 178200000000001,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "2d2625de7b4951220deddbc846a2a5e3ce20f79856c256b96078062a49565b0b"
+      },
+      {
+        "case": {
+          "case_id": "v178_validation_c01_w000",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "double_outlier",
+          "seed": 178200000001000,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "011a6ba242957dd5281469a1508732e7f2729ca6d9cb10e020f59561b1e3e5d5"
+      },
+      {
+        "case": {
+          "case_id": "v178_validation_c01_w001",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "double_outlier",
+          "seed": 178200000001001,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "c5ae9e5931876bfd7b1a38176f48f1b84e7edcc784a1c9811c3fd2b77fbc4950"
+      },
+      {
+        "case": {
+          "case_id": "v178_validation_c02_w000",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "single_outlier",
+          "seed": 178200000002000,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "a886dc0b672b531cf612c7251afc4da24b000974b93c370590cc675089557af3"
+      },
+      {
+        "case": {
+          "case_id": "v178_validation_c02_w001",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "single_outlier",
+          "seed": 178200000002001,
+          "sheep": 15
+        },
+        "samples": 12,
+        "sha256": "ed2d548ed68fb924d44208a59bab12fe3d8cdb22d63c1762b8aa83017ff922cd"
+      },
+      {
+        "case": {
+          "case_id": "v178_validation_c03_w000",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "split",
+          "seed": 178200000003000,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "be9f9c132e497289b592a2bda7bc3230897616acef4830c585b039496bc5c4b9"
+      },
+      {
+        "case": {
+          "case_id": "v178_validation_c03_w001",
+          "condition": "N15",
+          "dogs": 2,
+          "family": "canonical",
+          "kind": "canonical",
+          "physics_multiplier": 1.0,
+          "scenario": "split",
+          "seed": 178200000003001,
+          "sheep": 15
+        },
+        "samples": 16,
+        "sha256": "58327c30a67985d1035ba7a15678869eceece6dfcc0960f4e4425856d860e8b5"
+      }
+    ]
+  },
+  "metrics": {
+    "execution": {
+      "train": {
+        "mae": 6.500979900360107,
+        "rmse": 11.557344436645508,
+        "samples": 448,
+        "signed_bias": -1.7277483940124512
+      },
+      "validation": {
+        "mae": 9.763347625732422,
+        "rmse": 12.956425666809082,
+        "samples": 112,
+        "signed_bias": 0.6198381781578064
+      }
+    },
+    "physical": {
+      "train": {
+        "mae": 7.319799423217773,
+        "rmse": 12.373090744018555,
+        "samples": 448,
+        "signed_bias": 1.2651822566986084
+      },
+      "validation": {
+        "mae": 9.649551391601562,
+        "rmse": 14.935836791992188,
+        "samples": 112,
+        "signed_bias": 2.487600088119507
+      }
+    }
+  },
+  "parameters": {
+    "execution": 51585,
+    "physical": 51585
+  },
+  "status": "COMPLETE",
+  "train_samples": 448,
+  "train_worlds": 32,
+  "validation_samples": 112,
+  "validation_worlds": 8
+}

@@ -1,0 +1,22 @@
+{
+  "common_diagnostic_states": 768,
+  "completed_episodes": 768,
+  "degenerate_seed_variance": false,
+  "df": 7,
+  "difference_points": 2.604166666666668,
+  "difference_sd": 2.156454872944858,
+  "expected_episodes": 768,
+  "full_success_percent": 76.82291666666667,
+  "missing_episodes": 0,
+  "primary_contrast": "Full minus designated-memory reinitialization",
+  "primary_interval": [
+    0.8013252763344259,
+    4.40700805699891
+  ],
+  "primary_interval_status": "paired_t",
+  "reinitialized_success_percent": 74.21875,
+  "statistical_unit": "Eight high-level training-seed means, conditional on 48 fixed worlds and shared BASC.",
+  "status": "COMPLETE",
+  "study_schema": "cogp-designated-memory-v179-1",
+  "unreached_common_states_in_completed_full_episodes": 0
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "experiment_panel",
+  "name": "timing",
+  "kind": "timing",
+  "training_seeds": [
+    201
+  ],
+  "world_manifest": "manifests/model_controls/timing.json",
+  "manifest_required": false,
+  "manifest_status": "provided_exact_reset_inputs",
+  "conditions": 48,
+  "worlds": 48,
+  "worlds_per_condition": 1,
+  "episodes_per_arm": 48,
+  "arms": {
+    "hccg_cogp": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "edge_gnn_cogp": {
+      "generator": "edge_gnn",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "agent_dag_cogp": {
+      "generator": "agent_dag",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    }
+  },
+  "statistics_families": [],
+  "include_failures": true,
+  "checkpoint_selection": "fixed checkpoint; never evaluation success",
+  "statistical_scope": "conditional on fixed worlds and frozen executor; worlds are not training replicates",
+  "exclusive_worker": true,
+  "whole_episodes": true,
+  "selection_scope": "candidate generation plus all branch scoring; loading/reset/live execution excluded",
+  "aggregate": "decision-weighted mean and observed maximum; no latency quantile claim"
+}

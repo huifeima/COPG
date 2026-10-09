@@ -1,0 +1,64 @@
+{
+  "schema": "training_protocol",
+  "seeds": [
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208
+  ],
+  "flock": 15,
+  "team": 2,
+  "scenarios": [
+    "compact",
+    "single_outlier",
+    "double_outlier",
+    "split"
+  ],
+  "scenario_sampling": "uniform",
+  "decisions": 32768,
+  "streams": 8,
+  "rollout": 1024,
+  "ppo_epochs": 5,
+  "actor_lr": 0.0003,
+  "critic_lr": 0.0005,
+  "policy_clip": 0.1,
+  "value_clip": 0.2,
+  "entropy": 0.01,
+  "auxiliary_loss": 0.1,
+  "pair_weight": 0.5,
+  "auxiliary_score_weight": 0.1,
+  "gamma": 0.99,
+  "gae_lambda": 0.95,
+  "gradient_clip": 0.5,
+  "adam_betas": [
+    0.9,
+    0.999
+  ],
+  "adam_eps": 1e-05,
+  "adam_weight_decay": 0,
+  "checkpoint": "final fixed decision budget",
+  "historical_training_reset_addressing": "not supplied; new project uses documented independent addressing, not claimed byte-identical historical retraining",
+  "dynamics": {
+    "additional_decisions": 2048,
+    "behavior_probabilities": {
+      "greedy": 0.7,
+      "categorical": 0.2,
+      "uniform_feasible": 0.1
+    },
+    "force_sample_stride": 12,
+    "reservoir_cap": 60000,
+    "split": "episode80/20",
+    "updates": 5000,
+    "batch_size": 64,
+    "lr_start": 0.001,
+    "lr_end": 0.0001,
+    "weight_decay": 1e-05,
+    "grad_clip": 5,
+    "selection": "held-out force RMSE"
+  },
+  "basc": "load frozen supplied Collect/Drive checkpoints; do not replace with random or heuristic policies"
+}

@@ -1,0 +1,20 @@
+{
+  "actor_digest": "b810aa5151c20a6256471365b0ecfe5296eeb4e69defde97cb5cd58494e46850",
+  "actor_parameters": 941061,
+  "actor_training_critic": "physical-only PPO; saved own critic is not the shared planning critic",
+  "checkpoint_path": "<PROJECT_ROOT>/runs/HCCG_Reviewer_v178/actors/s201/physical/final.pt",
+  "checkpoint_sha256": "f4db8b3f975545ecfa4648b20fcc7f7d31b15daed37e4b62a68a5606060c548c",
+  "high_steps": 632055,
+  "identity_hash": "2dd43f996d1a21df94606dcd7e104ad587a73c44e01f9cdef579289d22327987",
+  "initialization": "from random initialisation; no parent high-level checkpoint",
+  "schema": "reviewer-actor-v178.1",
+  "seconds_this_process": 9858.898741652956,
+  "seed": 201,
+  "side_schema": "boundary-execution-or-active-physical-projection-v178.1",
+  "status": "COMPLETE",
+  "study_hash": "a2ebdf4d9b0d619c292c907f9d16e9ca45339092bf100694f799925880303969",
+  "test_only": false,
+  "training_decisions": 32768,
+  "training_primitive_steps": 3792318,
+  "variant": "physical"
+}

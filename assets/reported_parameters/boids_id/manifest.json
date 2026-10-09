@@ -1,0 +1,100 @@
+{
+  "format": "cogp-recovered-reported-parameter-manifest",
+  "origin": "logged_parameter_recovery",
+  "kind": "boids_id",
+  "count": 8,
+  "assets": [
+    {
+      "seed": 201,
+      "path": "s201.coefficients.json",
+      "sha256": "4d0c7a81169ebaae517e051182aeaf0e47611af6066636526d1b43e0400c3862",
+      "source_report_sha256": "e27143f32cb2aafdf1ebb656c0e91273aa1f96d224a158f627cd0e0a92df1572",
+      "missing_original_checkpoint_sha256": "acc465484d50999489a98cfcd7e4dea87d8cfc89c11a08cad946014246f41ae1",
+      "trainable_parameters": 0,
+      "numpy_formula_max_absolute_error": 1.9073486328125e-06,
+      "coefficient_count": 7,
+      "test_only": false
+    },
+    {
+      "seed": 202,
+      "path": "s202.coefficients.json",
+      "sha256": "028a95263a824783850acb86d95c36251ddb2ab538121003a819b0492cd7c123",
+      "source_report_sha256": "73ac9c5db41d272f4ed9debe8c482ae00e235130fd5b4205a53325a425e8f7f0",
+      "missing_original_checkpoint_sha256": "2e1ec588fe3d20256443747db67223afe017fcab2722a6f2ff2c64bca0f7423f",
+      "trainable_parameters": 0,
+      "numpy_formula_max_absolute_error": 2.384185791015625e-07,
+      "coefficient_count": 7,
+      "test_only": false
+    },
+    {
+      "seed": 203,
+      "path": "s203.coefficients.json",
+      "sha256": "6ca91d38149e5a882ab8c6627d51150da187ca1d5058be98218f449ab5a11d31",
+      "source_report_sha256": "ee764e32cbc78634bab3fa97c1604346ddaaa6925300cafbfcf805a51017cd2e",
+      "missing_original_checkpoint_sha256": "b0bc3c081156eceaaa279a850918d73e05512a677ceac93aa465adceb2cb85a8",
+      "trainable_parameters": 0,
+      "numpy_formula_max_absolute_error": 1.9073486328125e-06,
+      "coefficient_count": 7,
+      "test_only": false
+    },
+    {
+      "seed": 204,
+      "path": "s204.coefficients.json",
+      "sha256": "9197991e49ec56aeb41fde44f9dd1e0212f42a2881ad4bfcb7ef7188921b77ed",
+      "source_report_sha256": "9b9c175ace21c58d73c2c73865441258252e08d74a13cdfe871d974c5c88deaf",
+      "missing_original_checkpoint_sha256": "302cb9a30cb48b409717b852f146c7e278732e78a85859b0f8b1842fe1680414",
+      "trainable_parameters": 0,
+      "numpy_formula_max_absolute_error": 0.0,
+      "coefficient_count": 7,
+      "test_only": false
+    },
+    {
+      "seed": 205,
+      "path": "s205.coefficients.json",
+      "sha256": "f3eb9e4bc9ab5a20ad6e74d866fb6d2cdc8b3ef7b3def9beec2d5538a7267d73",
+      "source_report_sha256": "00aeaa0aeeb2727b10292b7efd8954251d4f485d255f0b1799ac8876bbfa460c",
+      "missing_original_checkpoint_sha256": "d6f5935b788a727c11fd66b147f2e07d636238515f58a5a5d3fe4cbdb41893fa",
+      "trainable_parameters": 0,
+      "numpy_formula_max_absolute_error": 1.1920928955078125e-07,
+      "coefficient_count": 7,
+      "test_only": false
+    },
+    {
+      "seed": 206,
+      "path": "s206.coefficients.json",
+      "sha256": "d4591b026c2583dd05f3655726e6d55173d44b6e8ff258cae17498dc1b0252b4",
+      "source_report_sha256": "6062b35794f413a99c7389d98dd7341dcb9f5d6ef5378c940a32047a48f9d095",
+      "missing_original_checkpoint_sha256": "033932ad5e075825c606a17463c1d4106a1de765750bca443f9e789333d61ac9",
+      "trainable_parameters": 0,
+      "numpy_formula_max_absolute_error": 1.1920928955078125e-07,
+      "coefficient_count": 7,
+      "test_only": false
+    },
+    {
+      "seed": 207,
+      "path": "s207.coefficients.json",
+      "sha256": "297342403a71715dad5e62c937987f6bb7a3c54dcf347bcffc4275b662eea070",
+      "source_report_sha256": "f8f49ed30ca3cd28dc3d534e234fe64d020dc9d8424f85419e30521b8122e25a",
+      "missing_original_checkpoint_sha256": "f2951d1721d28cbc313d54547e2eb95a39ac4f868b3568f9b19ee0728165c681",
+      "trainable_parameters": 0,
+      "numpy_formula_max_absolute_error": 1.9073486328125e-06,
+      "coefficient_count": 7,
+      "test_only": false
+    },
+    {
+      "seed": 208,
+      "path": "s208.coefficients.json",
+      "sha256": "e39f554550285ce480805a5f834d437d03ff7765bb232cb1b235d8816bd67208",
+      "source_report_sha256": "88bd9eb510d52748a9b707d82457488b8d5e88a2a619a29a53a734ccbb42bf22",
+      "missing_original_checkpoint_sha256": "482520ed0112fe3391fc40fe2d7cd0ddcf0f33a2e403c7dec1edb34e7072d8f3",
+      "trainable_parameters": 0,
+      "numpy_formula_max_absolute_error": 2.384185791015625e-07,
+      "coefficient_count": 7,
+      "test_only": false
+    }
+  ],
+  "original_checkpoint_present": false,
+  "historical_closed_loop_replay_established": false,
+  "validation": "Actual eight archived reports parsed; reported coefficients compared exactly after float32 conversion; model forces checked against an independent NumPy formula on one engineering state.",
+  "registration_scope": "Parameter-data asset only, not a dynamics checkpoint registry entry."
+}

@@ -1,0 +1,32 @@
+{
+  "format": "cogp-logged-boids-parameters",
+  "kind": "boids_id",
+  "origin": "logged_parameter_recovery",
+  "test_only": false,
+  "seed": 201,
+  "optimizer_updates": 5000,
+  "best_step": 5000,
+  "geometry": {
+    "world_size": 800.0,
+    "sheep_rest_distance": 20.0,
+    "sheep_social_radius": 42.0,
+    "dog_influence_radius": 80.0,
+    "sheep_max_speed": 6.0,
+    "dog_max_speed": 12.0,
+    "sheep_max_accel": 18.0,
+    "boundary_margin": 35.0
+  },
+  "coefficients": {
+    "repulsion": 4.869203090667725,
+    "attraction": 0.32960715889930725,
+    "alignment": 0.5613056421279907,
+    "dog_repulsion": 22.83640480041504,
+    "damping": 0.5600096583366394,
+    "boundary": 0.8044976592063904,
+    "dog_distance_exponent": 1.237667441368103
+  },
+  "source_report_name": "boids_id.report.json",
+  "source_report_sha256": "e27143f32cb2aafdf1ebb656c0e91273aa1f96d224a158f627cd0e0a92df1572",
+  "missing_original_checkpoint_sha256": "acc465484d50999489a98cfcd7e4dea87d8cfc89c11a08cad946014246f41ae1",
+  "scope": "Reported positive coefficients evaluated by the available Boids formula; not an original checkpoint, optimizer state, or proof of historical replay."
+}

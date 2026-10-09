@@ -1,0 +1,257 @@
+{
+  "schema": "experiment_panel",
+  "name": "fresh_generators",
+  "kind": "closed_loop",
+  "training_seeds": [
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208
+  ],
+  "world_manifest": null,
+  "manifest_required": true,
+  "manifest_status": "historical_manifest_not_supplied",
+  "conditions": 48,
+  "worlds": 240,
+  "worlds_per_condition": 5,
+  "episodes_per_arm": 1920,
+  "arms": {
+    "hccg_direct": {
+      "generator": "hccg",
+      "planner": false,
+      "dynamics": null,
+      "critic": null,
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "hccg_cogp": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "edge_gnn_direct": {
+      "generator": "edge_gnn",
+      "planner": false,
+      "dynamics": null,
+      "critic": null,
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "edge_gnn_cogp": {
+      "generator": "edge_gnn",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "agent_dag_direct": {
+      "generator": "agent_dag",
+      "planner": false,
+      "dynamics": null,
+      "critic": null,
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "agent_dag_cogp": {
+      "generator": "agent_dag",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "geometry_direct": {
+      "generator": "geometry",
+      "planner": false,
+      "dynamics": null,
+      "critic": null,
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "geometry_cogp": {
+      "generator": "geometry",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "edge_gnn_cogp_own": {
+      "generator": "edge_gnn",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "own",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "agent_dag_cogp_own": {
+      "generator": "agent_dag",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "own",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    }
+  },
+  "statistics_families": [
+    {
+      "name": "fresh_primary",
+      "size": 9,
+      "unit": "paired_training_seed_mean",
+      "confidence": 0.95,
+      "df": 7,
+      "correction": "bonferroni",
+      "contrasts": [
+        {
+          "name": "hccg_planning_gain",
+          "coefficients": {
+            "hccg_cogp": 1,
+            "hccg_direct": -1
+          }
+        },
+        {
+          "name": "edge_gnn_planning_gain",
+          "coefficients": {
+            "edge_gnn_cogp": 1,
+            "edge_gnn_direct": -1
+          }
+        },
+        {
+          "name": "agent_dag_planning_gain",
+          "coefficients": {
+            "agent_dag_cogp": 1,
+            "agent_dag_direct": -1
+          }
+        },
+        {
+          "name": "geometry_planning_gain",
+          "coefficients": {
+            "geometry_cogp": 1,
+            "geometry_direct": -1
+          }
+        },
+        {
+          "name": "hccg_vs_edge_gnn",
+          "coefficients": {
+            "hccg_cogp": 1,
+            "edge_gnn_cogp": -1
+          }
+        },
+        {
+          "name": "hccg_vs_agent_dag",
+          "coefficients": {
+            "hccg_cogp": 1,
+            "agent_dag_cogp": -1
+          }
+        },
+        {
+          "name": "hccg_vs_geometry",
+          "coefficients": {
+            "hccg_cogp": 1,
+            "geometry_cogp": -1
+          }
+        },
+        {
+          "name": "edge_gnn_critic",
+          "coefficients": {
+            "edge_gnn_cogp_own": 1,
+            "edge_gnn_cogp": -1
+          }
+        },
+        {
+          "name": "agent_dag_critic",
+          "coefficients": {
+            "agent_dag_cogp_own": 1,
+            "agent_dag_cogp": -1
+          }
+        }
+      ]
+    },
+    {
+      "name": "fresh_system",
+      "size": 2,
+      "unit": "paired_training_seed_mean",
+      "confidence": 0.95,
+      "df": 7,
+      "correction": "bonferroni",
+      "contrasts": [
+        {
+          "name": "hccg_vs_edge_gnn_own",
+          "coefficients": {
+            "hccg_cogp": 1,
+            "edge_gnn_cogp_own": -1
+          }
+        },
+        {
+          "name": "hccg_vs_agent_dag_own",
+          "coefficients": {
+            "hccg_cogp": 1,
+            "agent_dag_cogp_own": -1
+          }
+        }
+      ]
+    }
+  ],
+  "include_failures": true,
+  "checkpoint_selection": "fixed checkpoint; never evaluation success",
+  "statistical_scope": "conditional on fixed worlds and frozen executor; worlds are not training replicates",
+  "scope": "Separate from the supplied 240-world model_controls panel."
+}

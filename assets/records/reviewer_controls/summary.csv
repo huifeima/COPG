@@ -1,0 +1,19 @@
+phase,arm,complete_panel,expected_episodes,observed_episodes,expected_training_seeds,observed_training_seeds,complete_seed_panels,mean_observed_seed_success_percent,observed_seed_sd_pp,pooled_observed_success_percent,observed_successes,interpretation
+actor_eval,Actor_execution_COGP,True,1920,1920,8,8,8,72.23958333333333,3.6319890206375542,72.23958333333333,1387,full frozen panel
+actor_eval,Actor_execution_direct,True,1920,1920,8,8,8,54.6875,2.9609730007399775,54.6875,1050,full frozen panel
+actor_eval,Actor_physical_COGP,True,1920,1920,8,8,8,72.03125,3.373548335657258,72.03125,1383,full frozen panel
+actor_eval,Actor_physical_direct,True,1920,1920,8,8,8,52.1875,4.099155449214555,52.1875,1002,full frozen panel
+core,BoidsID_H64,True,1920,1920,8,8,8,71.35416666666667,3.0517201758591876,71.35416666666667,1370,full frozen panel
+core,Execution_H12,True,1920,1920,8,8,8,58.69791666666667,4.456789341012062,58.697916666666664,1127,full frozen panel
+core,Execution_H64,True,1920,1920,8,8,8,74.47916666666667,2.806154658648376,74.47916666666667,1430,full frozen panel
+core,LocalPooled_H64,True,1920,1920,8,8,8,48.072916666666664,2.5191479017305944,48.072916666666664,923,full frozen panel
+core,Old_H12,True,1920,1920,8,8,8,55.10416666666667,2.797302413692663,55.104166666666664,1058,full frozen panel
+core,Old_H64,True,1920,1920,8,8,8,72.65625,2.313880433110181,72.65625,1395,full frozen panel
+core,Physical_H12,True,1920,1920,8,8,8,62.08333333333333,5.482656637937834,62.083333333333336,1192,full frozen panel
+core,Physical_H64,True,1920,1920,8,8,8,74.63541666666667,5.29598858001814,74.63541666666667,1433,full frozen panel
+stress,Stress_AgentDAG,True,1440,1440,8,8,8,68.61111111111111,2.8943781791762637,68.61111111111111,988,full frozen panel
+stress,Stress_EdgeGNN,True,1440,1440,8,8,8,63.81944444444444,4.537104523847501,63.81944444444444,919,full frozen panel
+stress,Stress_HCCG,True,1440,1440,8,8,8,63.888888888888886,4.251776265390117,63.888888888888886,920,full frozen panel
+timing,Timing_AgentDAG,True,48,48,1,1,1,79.16666666666666,,79.16666666666667,38,full frozen panel
+timing,Timing_EdgeGNN,True,48,48,1,1,1,64.58333333333334,,64.58333333333333,31,full frozen panel
+timing,Timing_HCCG,True,48,48,1,1,1,72.91666666666666,,72.91666666666667,35,full frozen panel

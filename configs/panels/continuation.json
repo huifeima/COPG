@@ -1,0 +1,49 @@
+{
+  "schema": "experiment_panel",
+  "name": "continuation",
+  "kind": "diagnostic",
+  "training_seeds": [
+    201,
+    208
+  ],
+  "world_manifest": "manifests/model_controls/diagnostic.json",
+  "manifest_required": false,
+  "manifest_status": "provided_exact_reset_inputs",
+  "conditions": 48,
+  "worlds": 48,
+  "worlds_per_condition": 1,
+  "episodes_per_arm": 96,
+  "arms": {
+    "graph_h64": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    }
+  },
+  "statistics_families": [],
+  "include_failures": true,
+  "checkpoint_selection": "fixed checkpoint; never evaluation success",
+  "statistical_scope": "conditional on fixed worlds and frozen executor; worlds are not training replicates",
+  "states": 192,
+  "driver": "hccg_direct",
+  "decision_indices": [
+    0,
+    2
+  ],
+  "reference_continuations": [
+    "hccg_direct",
+    "hccg_cogp"
+  ],
+  "reference": "true current committed assignment then specified continuation to terminal",
+  "true_first_scorer": "true first committed option plus same approximate critic",
+  "deployment_oracle": false,
+  "descriptive_only": true
+}

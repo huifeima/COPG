@@ -1,0 +1,172 @@
+{
+  "schema": "experiment_panel",
+  "name": "matched_critics",
+  "kind": "closed_loop",
+  "training_seeds": [
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208
+  ],
+  "world_manifest": "manifests/model_controls/test.json",
+  "manifest_required": false,
+  "manifest_status": "provided_exact_reset_inputs",
+  "conditions": 48,
+  "worlds": 240,
+  "worlds_per_condition": 5,
+  "episodes_per_arm": 1920,
+  "arms": {
+    "physical_critic_h12": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "physical",
+      "H": 12,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "physical_critic_h64": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "physical",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "execution_critic_h12": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "execution",
+      "H": 12,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "execution_critic_h64": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "execution",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    }
+  },
+  "statistics_families": [
+    {
+      "name": "model_core",
+      "size": 5,
+      "unit": "paired_training_seed_mean",
+      "confidence": 0.95,
+      "df": 7,
+      "correction": "bonferroni",
+      "contrasts": [
+        {
+          "name": "graph_minus_boids",
+          "coefficients": {
+            "original_h64": 1,
+            "boids_identified_h64": -1
+          }
+        },
+        {
+          "name": "graph_minus_local",
+          "coefficients": {
+            "original_h64": 1,
+            "local_pooled_h64": -1
+          }
+        },
+        {
+          "name": "information_h12",
+          "coefficients": {
+            "execution_critic_h12": 1,
+            "physical_critic_h12": -1
+          }
+        },
+        {
+          "name": "information_h64",
+          "coefficients": {
+            "execution_critic_h64": 1,
+            "physical_critic_h64": -1
+          }
+        },
+        {
+          "name": "horizon_by_information",
+          "coefficients": {
+            "execution_critic_h64": 1,
+            "execution_critic_h12": -1,
+            "physical_critic_h64": -1,
+            "physical_critic_h12": 1
+          }
+        }
+      ]
+    }
+  ],
+  "include_failures": true,
+  "checkpoint_selection": "fixed checkpoint; never evaluation success",
+  "statistical_scope": "conditional on fixed worlds and frozen executor; worlds are not training replicates",
+  "alias_of": "model_controls",
+  "fit": {
+    "training_manifest": "manifests/model_controls/train.json",
+    "validation_manifest": "manifests/model_controls/validation.json",
+    "critic": {
+      "updates": 5000,
+      "batch_size": 128,
+      "lr": 0.0003,
+      "weight_decay": 0.0001,
+      "gradient_clip": 5,
+      "checkpoint": "final",
+      "parameters": 51585,
+      "same_initialization": true,
+      "same_minibatches": true,
+      "same_snapshots_labels_splits": true,
+      "driver": "frozen_hccg_direct",
+      "decision_indices": [
+        0,
+        2
+      ],
+      "cut_horizons": [
+        12,
+        64
+      ],
+      "original_commitment": 64,
+      "continuation": "finish original commitment then greedy hccg to terminal",
+      "terminal_prefix_label": 0,
+      "planner_aware": false
+    },
+    "dynamics": {
+      "updates": 5000,
+      "batch_size": 64,
+      "lr_start": 0.001,
+      "lr_end": 0.0001,
+      "optimizer": "AdamW",
+      "weight_decay": 1e-05,
+      "gradient_clip": 5,
+      "same_acceleration_archive": true,
+      "same_episode_ids": true,
+      "selection": "lowest validation acceleration RMSE",
+      "validation_updates": "update1 and every100"
+    }
+  },
+  "scope": "Subset of model_controls. Full core family requires graph and identified/local dynamics arms too."
+}

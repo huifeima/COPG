@@ -1,0 +1,313 @@
+{
+  "schema": "experiment_panel",
+  "name": "proposal_refinement",
+  "kind": "closed_loop",
+  "training_seeds": [
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208
+  ],
+  "world_manifest": null,
+  "manifest_required": true,
+  "manifest_status": "historical_manifest_not_supplied",
+  "conditions": 48,
+  "worlds": 48,
+  "worlds_per_condition": 1,
+  "episodes_per_arm": 384,
+  "arms": {
+    "hccg_original": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "original"
+    },
+    "hccg_diverse": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "diverse"
+    },
+    "hccg_return_rank": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "return_rank"
+    },
+    "edge_gnn_original": {
+      "generator": "edge_gnn",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "original"
+    },
+    "edge_gnn_diverse": {
+      "generator": "edge_gnn",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "diverse"
+    },
+    "edge_gnn_return_rank": {
+      "generator": "edge_gnn",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "return_rank"
+    },
+    "agent_dag_original": {
+      "generator": "agent_dag",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "original"
+    },
+    "agent_dag_diverse": {
+      "generator": "agent_dag",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "diverse"
+    },
+    "agent_dag_return_rank": {
+      "generator": "agent_dag",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "return_rank"
+    },
+    "hccg_beam": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "beam"
+    },
+    "hccg_winner": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "winner"
+    }
+  },
+  "statistics_families": [
+    {
+      "name": "proposal_improvement",
+      "size": 6,
+      "unit": "paired_training_seed_mean",
+      "confidence": 0.95,
+      "df": 7,
+      "correction": "bonferroni",
+      "contrasts": [
+        {
+          "name": "hccg_diverse_gain",
+          "coefficients": {
+            "hccg_diverse": 1,
+            "hccg_original": -1
+          }
+        },
+        {
+          "name": "hccg_return_rank_gain",
+          "coefficients": {
+            "hccg_return_rank": 1,
+            "hccg_original": -1
+          }
+        },
+        {
+          "name": "edge_gnn_diverse_gain",
+          "coefficients": {
+            "edge_gnn_diverse": 1,
+            "edge_gnn_original": -1
+          }
+        },
+        {
+          "name": "edge_gnn_return_rank_gain",
+          "coefficients": {
+            "edge_gnn_return_rank": 1,
+            "edge_gnn_original": -1
+          }
+        },
+        {
+          "name": "agent_dag_diverse_gain",
+          "coefficients": {
+            "agent_dag_diverse": 1,
+            "agent_dag_original": -1
+          }
+        },
+        {
+          "name": "agent_dag_return_rank_gain",
+          "coefficients": {
+            "agent_dag_return_rank": 1,
+            "agent_dag_original": -1
+          }
+        }
+      ]
+    },
+    {
+      "name": "proposal_mechanism",
+      "size": 3,
+      "unit": "paired_training_seed_mean",
+      "confidence": 0.95,
+      "df": 7,
+      "correction": "bonferroni",
+      "contrasts": [
+        {
+          "name": "beam_gain",
+          "coefficients": {
+            "hccg_beam": 1,
+            "hccg_original": -1
+          }
+        },
+        {
+          "name": "diverse_minus_beam",
+          "coefficients": {
+            "hccg_diverse": 1,
+            "hccg_beam": -1
+          }
+        },
+        {
+          "name": "return_minus_winner",
+          "coefficients": {
+            "hccg_return_rank": 1,
+            "hccg_winner": -1
+          }
+        }
+      ]
+    },
+    {
+      "name": "proposal_system",
+      "size": 2,
+      "unit": "paired_training_seed_mean",
+      "confidence": 0.95,
+      "df": 7,
+      "correction": "bonferroni",
+      "contrasts": [
+        {
+          "name": "hccg_vs_edge",
+          "coefficients": {
+            "hccg_return_rank": 1,
+            "edge_gnn_return_rank": -1
+          }
+        },
+        {
+          "name": "hccg_vs_dag",
+          "coefficients": {
+            "hccg_return_rank": 1,
+            "agent_dag_return_rank": -1
+          }
+        }
+      ]
+    }
+  ],
+  "include_failures": true,
+  "checkpoint_selection": "fixed checkpoint; never evaluation success",
+  "statistical_scope": "conditional on fixed worlds and frozen executor; worlds are not training replicates",
+  "exploratory": true,
+  "fit": {
+    "train_worlds": 16,
+    "validation_worlds": 8,
+    "fit_N": 15,
+    "fit_M": 2,
+    "training_manifest_required": true,
+    "validation_manifest_required": true,
+    "backbones_frozen": true,
+    "expanded_exact_max_M": 3,
+    "native_beam_width": 4096,
+    "native_complete_limit": 128,
+    "geometry_limit": 256,
+    "shortlist_limit": 32,
+    "native_winner_first": true,
+    "ridge": 1,
+    "features": 28,
+    "candidate_labels_limit": 8,
+    "driver": "hccg_cogp",
+    "decision_indices": [
+      0,
+      2
+    ],
+    "reference_continuation": "hccg_direct",
+    "validation_hyperparameter_search": false
+  },
+  "diversity": {
+    "occupancy_total_variation_weight": 0.75,
+    "binding_hamming_weight": 0.25,
+    "ties": [
+      "native_logit",
+      "candidate_order"
+    ]
+  }
+}

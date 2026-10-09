@@ -1,0 +1,126 @@
+{
+  "schema": "experiment_panel",
+  "name": "matched_actors",
+  "kind": "closed_loop",
+  "training_seeds": [
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208
+  ],
+  "world_manifest": "manifests/model_controls/test.json",
+  "manifest_required": false,
+  "manifest_status": "provided_exact_reset_inputs",
+  "conditions": 48,
+  "worlds": 240,
+  "worlds_per_condition": 5,
+  "episodes_per_arm": 1920,
+  "arms": {
+    "physical_actor_direct": {
+      "generator": "hccg",
+      "planner": false,
+      "dynamics": null,
+      "critic": null,
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "physical",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "physical_actor_cogp": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "physical",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "execution_actor_direct": {
+      "generator": "hccg",
+      "planner": false,
+      "dynamics": null,
+      "critic": null,
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "execution",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "execution_actor_cogp": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "execution",
+      "memory": "inherit",
+      "proposal": "native"
+    }
+  },
+  "statistics_families": [
+    {
+      "name": "actor_information",
+      "size": 3,
+      "unit": "paired_training_seed_mean",
+      "confidence": 0.95,
+      "df": 7,
+      "correction": "bonferroni",
+      "contrasts": [
+        {
+          "name": "information_direct",
+          "coefficients": {
+            "execution_actor_direct": 1,
+            "physical_actor_direct": -1
+          }
+        },
+        {
+          "name": "planning_after_information",
+          "coefficients": {
+            "execution_actor_cogp": 1,
+            "execution_actor_direct": -1
+          }
+        },
+        {
+          "name": "information_by_planning",
+          "coefficients": {
+            "execution_actor_cogp": 1,
+            "execution_actor_direct": -1,
+            "physical_actor_cogp": -1,
+            "physical_actor_direct": 1
+          }
+        }
+      ]
+    }
+  ],
+  "include_failures": true,
+  "checkpoint_selection": "fixed checkpoint; never evaluation success",
+  "statistical_scope": "conditional on fixed worlds and frozen executor; worlds are not training replicates",
+  "training": {
+    "decisions": 32768,
+    "streams": 8,
+    "rollout": 1024,
+    "ppo_epochs": 5,
+    "parameters": 941061,
+    "initialize_from_scratch": true,
+    "pair_same_initialization": true,
+    "training_critic": "physical PPO trained along own trajectories",
+    "planning_critic": "original frozen hccg",
+    "training_random_addressing": "Historical exact reset stream addressing not supplied; new project training must be labelled a reproduction attempt"
+  }
+}

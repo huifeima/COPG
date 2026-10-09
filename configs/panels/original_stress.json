@@ -1,0 +1,101 @@
+{
+  "schema": "experiment_panel",
+  "name": "original_stress",
+  "kind": "closed_loop",
+  "training_seeds": [
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208
+  ],
+  "world_manifest": null,
+  "manifest_required": true,
+  "manifest_status": "historical_manifest_not_supplied",
+  "conditions": 36,
+  "worlds": 180,
+  "worlds_per_condition": null,
+  "episodes_per_arm": 1440,
+  "arms": {
+    "hccg_direct": {
+      "generator": "hccg",
+      "planner": false,
+      "dynamics": null,
+      "critic": null,
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "edge_gnn_direct": {
+      "generator": "edge_gnn",
+      "planner": false,
+      "dynamics": null,
+      "critic": null,
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "agent_dag_direct": {
+      "generator": "agent_dag",
+      "planner": false,
+      "dynamics": null,
+      "critic": null,
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "deepsets_cogp": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "deepsets",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "hccg_cogp": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    }
+  },
+  "statistics_families": [],
+  "include_failures": true,
+  "checkpoint_selection": "fixed checkpoint; never evaluation success",
+  "statistical_scope": "conditional on fixed worlds and frozen executor; worlds are not training replicates",
+  "sheep": 15,
+  "initial_worlds": 60,
+  "physics_multipliers": [
+    0.8,
+    1.0,
+    1.2
+  ],
+  "scope": "Historical panel manifest unavailable; do not pool with cross-generator stress"
+}

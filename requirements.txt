@@ -1,0 +1,8 @@
+numpy>=1.24
+torch>=2.5
+gymnasium>=0.29
+stable-baselines3>=2.4
+scipy>=1.11
+matplotlib>=3.8
+psutil>=5.9
+cloudpickle>=3.0

@@ -1,0 +1,338 @@
+[
+  {
+    "sheep": 10,
+    "kind": "canonical",
+    "dogs": 2,
+    "scenario": "compact",
+    "family": "canonical"
+  },
+  {
+    "sheep": 10,
+    "kind": "canonical",
+    "dogs": 2,
+    "scenario": "double_outlier",
+    "family": "canonical"
+  },
+  {
+    "sheep": 10,
+    "kind": "canonical",
+    "dogs": 2,
+    "scenario": "single_outlier",
+    "family": "canonical"
+  },
+  {
+    "sheep": 10,
+    "kind": "canonical",
+    "dogs": 2,
+    "scenario": "split",
+    "family": "canonical"
+  },
+  {
+    "sheep": 10,
+    "kind": "scaling",
+    "dogs": 2,
+    "scenario": "multi_cluster",
+    "family": "scaling"
+  },
+  {
+    "sheep": 10,
+    "kind": "scaling",
+    "dogs": 2,
+    "scenario": "split",
+    "family": "scaling"
+  },
+  {
+    "sheep": 10,
+    "kind": "scaling",
+    "dogs": 2,
+    "scenario": "triple_matched",
+    "family": "scaling"
+  },
+  {
+    "sheep": 10,
+    "kind": "scaling",
+    "dogs": 3,
+    "scenario": "multi_cluster",
+    "family": "scaling"
+  },
+  {
+    "sheep": 10,
+    "kind": "scaling",
+    "dogs": 3,
+    "scenario": "split",
+    "family": "scaling"
+  },
+  {
+    "sheep": 10,
+    "kind": "scaling",
+    "dogs": 3,
+    "scenario": "triple_matched",
+    "family": "scaling"
+  },
+  {
+    "sheep": 10,
+    "kind": "scaling",
+    "dogs": 4,
+    "scenario": "multi_cluster",
+    "family": "scaling"
+  },
+  {
+    "sheep": 10,
+    "kind": "scaling",
+    "dogs": 4,
+    "scenario": "split",
+    "family": "scaling"
+  },
+  {
+    "sheep": 10,
+    "kind": "scaling",
+    "dogs": 4,
+    "scenario": "triple_matched",
+    "family": "scaling"
+  },
+  {
+    "sheep": 10,
+    "kind": "scaling",
+    "dogs": 6,
+    "scenario": "multi_cluster",
+    "family": "scaling"
+  },
+  {
+    "sheep": 10,
+    "kind": "scaling",
+    "dogs": 6,
+    "scenario": "split",
+    "family": "scaling"
+  },
+  {
+    "sheep": 10,
+    "kind": "scaling",
+    "dogs": 6,
+    "scenario": "triple_matched",
+    "family": "scaling"
+  },
+  {
+    "sheep": 15,
+    "kind": "canonical",
+    "dogs": 2,
+    "scenario": "compact",
+    "family": "canonical"
+  },
+  {
+    "sheep": 15,
+    "kind": "canonical",
+    "dogs": 2,
+    "scenario": "double_outlier",
+    "family": "canonical"
+  },
+  {
+    "sheep": 15,
+    "kind": "canonical",
+    "dogs": 2,
+    "scenario": "single_outlier",
+    "family": "canonical"
+  },
+  {
+    "sheep": 15,
+    "kind": "canonical",
+    "dogs": 2,
+    "scenario": "split",
+    "family": "canonical"
+  },
+  {
+    "sheep": 15,
+    "kind": "scaling",
+    "dogs": 2,
+    "scenario": "multi_cluster",
+    "family": "scaling"
+  },
+  {
+    "sheep": 15,
+    "kind": "scaling",
+    "dogs": 2,
+    "scenario": "split",
+    "family": "scaling"
+  },
+  {
+    "sheep": 15,
+    "kind": "scaling",
+    "dogs": 2,
+    "scenario": "triple_matched",
+    "family": "scaling"
+  },
+  {
+    "sheep": 15,
+    "kind": "scaling",
+    "dogs": 3,
+    "scenario": "multi_cluster",
+    "family": "scaling"
+  },
+  {
+    "sheep": 15,
+    "kind": "scaling",
+    "dogs": 3,
+    "scenario": "split",
+    "family": "scaling"
+  },
+  {
+    "sheep": 15,
+    "kind": "scaling",
+    "dogs": 3,
+    "scenario": "triple_matched",
+    "family": "scaling"
+  },
+  {
+    "sheep": 15,
+    "kind": "scaling",
+    "dogs": 4,
+    "scenario": "multi_cluster",
+    "family": "scaling"
+  },
+  {
+    "sheep": 15,
+    "kind": "scaling",
+    "dogs": 4,
+    "scenario": "split",
+    "family": "scaling"
+  },
+  {
+    "sheep": 15,
+    "kind": "scaling",
+    "dogs": 4,
+    "scenario": "triple_matched",
+    "family": "scaling"
+  },
+  {
+    "sheep": 15,
+    "kind": "scaling",
+    "dogs": 6,
+    "scenario": "multi_cluster",
+    "family": "scaling"
+  },
+  {
+    "sheep": 15,
+    "kind": "scaling",
+    "dogs": 6,
+    "scenario": "split",
+    "family": "scaling"
+  },
+  {
+    "sheep": 15,
+    "kind": "scaling",
+    "dogs": 6,
+    "scenario": "triple_matched",
+    "family": "scaling"
+  },
+  {
+    "sheep": 20,
+    "kind": "canonical",
+    "dogs": 2,
+    "scenario": "compact",
+    "family": "canonical"
+  },
+  {
+    "sheep": 20,
+    "kind": "canonical",
+    "dogs": 2,
+    "scenario": "double_outlier",
+    "family": "canonical"
+  },
+  {
+    "sheep": 20,
+    "kind": "canonical",
+    "dogs": 2,
+    "scenario": "single_outlier",
+    "family": "canonical"
+  },
+  {
+    "sheep": 20,
+    "kind": "canonical",
+    "dogs": 2,
+    "scenario": "split",
+    "family": "canonical"
+  },
+  {
+    "sheep": 20,
+    "kind": "scaling",
+    "dogs": 2,
+    "scenario": "multi_cluster",
+    "family": "scaling"
+  },
+  {
+    "sheep": 20,
+    "kind": "scaling",
+    "dogs": 2,
+    "scenario": "split",
+    "family": "scaling"
+  },
+  {
+    "sheep": 20,
+    "kind": "scaling",
+    "dogs": 2,
+    "scenario": "triple_matched",
+    "family": "scaling"
+  },
+  {
+    "sheep": 20,
+    "kind": "scaling",
+    "dogs": 3,
+    "scenario": "multi_cluster",
+    "family": "scaling"
+  },
+  {
+    "sheep": 20,
+    "kind": "scaling",
+    "dogs": 3,
+    "scenario": "split",
+    "family": "scaling"
+  },
+  {
+    "sheep": 20,
+    "kind": "scaling",
+    "dogs": 3,
+    "scenario": "triple_matched",
+    "family": "scaling"
+  },
+  {
+    "sheep": 20,
+    "kind": "scaling",
+    "dogs": 4,
+    "scenario": "multi_cluster",
+    "family": "scaling"
+  },
+  {
+    "sheep": 20,
+    "kind": "scaling",
+    "dogs": 4,
+    "scenario": "split",
+    "family": "scaling"
+  },
+  {
+    "sheep": 20,
+    "kind": "scaling",
+    "dogs": 4,
+    "scenario": "triple_matched",
+    "family": "scaling"
+  },
+  {
+    "sheep": 20,
+    "kind": "scaling",
+    "dogs": 6,
+    "scenario": "multi_cluster",
+    "family": "scaling"
+  },
+  {
+    "sheep": 20,
+    "kind": "scaling",
+    "dogs": 6,
+    "scenario": "split",
+    "family": "scaling"
+  },
+  {
+    "sheep": 20,
+    "kind": "scaling",
+    "dogs": 6,
+    "scenario": "triple_matched",
+    "family": "scaling"
+  }
+]

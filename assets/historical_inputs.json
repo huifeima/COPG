@@ -1,0 +1,58 @@
+{
+  "memory_episodes": {
+    "path": "records/execution_history/episodes.csv",
+    "sha256": "613c4b9e8165e47554d3fa686420039985f648666625fb432267c96ad7b8c052"
+  },
+  "memory_detail": {
+    "path": "records/execution_history_details/episodes_detail.csv",
+    "sha256": "b2aead9aff589ccce8b390f13073a16c4bee013dad818101ca7b0c467923ad9d"
+  },
+  "memory_study": {
+    "path": "records/execution_history/study.json",
+    "sha256": "b501e631a1c9676f24b061c187e8bf6c05e176d397c4a1bbb32ccf9eb59a092a"
+  },
+  "memory_common": {
+    "path": "records/execution_history_details/common_states_summary.csv",
+    "sha256": "df0af5cbf107bf61ae6513499f5217e4d99162c01bc3c45cc261830a890b5a8a"
+  },
+  "candidates": {
+    "path": "records/reviewer_controls/diagnostic_candidates.csv",
+    "sha256": "aeaf7c0335e6380fe537d97ec7a458f348e546528129a9e9bc7dd40f21a4ab3b"
+  },
+  "score_expected_seed": {
+    "path": "records/execution_history/score_components/v178192/per_seed.csv",
+    "sha256": "326a13028eb496b23783547f95e6656735a02a87fba762cea05a1d1f4bcadca2"
+  },
+  "controls_seeds": {
+    "path": "records/reviewer_controls/per_seed.csv",
+    "sha256": "59ff08826a52c71c9438f51c6abe1ce6a4bdf253343293dfe4e18ac3f10c4932"
+  },
+  "controls_cells": {
+    "path": "records/reviewer_controls/per_cell.csv",
+    "sha256": "7160e65b77c9347eb7d13c7db675d5ec45d8acf286e6ed042fafef74a8771e34"
+  },
+  "controls_summary": {
+    "path": "records/reviewer_controls/summary.csv",
+    "sha256": "1f2cc2ecf2fce904edf3d5dc9b9d76a7afdf1a9cabf3b4f59635300fe9279014"
+  },
+  "controls_contrasts": {
+    "path": "records/reviewer_controls/paired_contrasts.csv",
+    "sha256": "a435990c66b73c9b549ad483991c5be8649fb7b72ef5220d12db58d5fdf52865"
+  },
+  "controls_study": {
+    "path": "records/reviewer_controls/study.json",
+    "sha256": "3d6e914a4ec8c59bffb9b6f614d71a56b921cdd801d8c2fa0ae1c061cdfbeef1"
+  },
+  "controls_latency": {
+    "path": "records/reviewer_controls/selection_latency.csv",
+    "sha256": "62a99daafdfcd684bd573c20b7a5ad2a5df4c686aaa1c8b1161b53f3786a6abb"
+  },
+  "memory_decisions": {
+    "path": "records/execution_history_details/decisions_detail.csv",
+    "sha256": "d428207ac0978f5308bf6aacda8e16438e6caafe5acbff8fbd54b65a08721466"
+  },
+  "memory_common_full": {
+    "path": "records/execution_history_details/common_states.jsonl",
+    "sha256": "6dd8b5791890602d067a507d267759a1804da1234891b38aeed9b4d9885864cf"
+  }
+}

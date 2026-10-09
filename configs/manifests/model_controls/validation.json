@@ -1,0 +1,90 @@
+[
+  {
+    "seed": 178200000000000,
+    "kind": "canonical",
+    "scenario": "compact",
+    "dogs": 2,
+    "sheep": 15,
+    "family": "canonical",
+    "case_id": "model_controls_validation_0000",
+    "condition": "N15",
+    "physics_multiplier": 1.0
+  },
+  {
+    "seed": 178200000000001,
+    "kind": "canonical",
+    "scenario": "compact",
+    "dogs": 2,
+    "sheep": 15,
+    "family": "canonical",
+    "case_id": "model_controls_validation_0001",
+    "condition": "N15",
+    "physics_multiplier": 1.0
+  },
+  {
+    "seed": 178200000001000,
+    "kind": "canonical",
+    "scenario": "double_outlier",
+    "dogs": 2,
+    "sheep": 15,
+    "family": "canonical",
+    "case_id": "model_controls_validation_0002",
+    "condition": "N15",
+    "physics_multiplier": 1.0
+  },
+  {
+    "seed": 178200000001001,
+    "kind": "canonical",
+    "scenario": "double_outlier",
+    "dogs": 2,
+    "sheep": 15,
+    "family": "canonical",
+    "case_id": "model_controls_validation_0003",
+    "condition": "N15",
+    "physics_multiplier": 1.0
+  },
+  {
+    "seed": 178200000002000,
+    "kind": "canonical",
+    "scenario": "single_outlier",
+    "dogs": 2,
+    "sheep": 15,
+    "family": "canonical",
+    "case_id": "model_controls_validation_0004",
+    "condition": "N15",
+    "physics_multiplier": 1.0
+  },
+  {
+    "seed": 178200000002001,
+    "kind": "canonical",
+    "scenario": "single_outlier",
+    "dogs": 2,
+    "sheep": 15,
+    "family": "canonical",
+    "case_id": "model_controls_validation_0005",
+    "condition": "N15",
+    "physics_multiplier": 1.0
+  },
+  {
+    "seed": 178200000003000,
+    "kind": "canonical",
+    "scenario": "split",
+    "dogs": 2,
+    "sheep": 15,
+    "family": "canonical",
+    "case_id": "model_controls_validation_0006",
+    "condition": "N15",
+    "physics_multiplier": 1.0
+  },
+  {
+    "seed": 178200000003001,
+    "kind": "canonical",
+    "scenario": "split",
+    "dogs": 2,
+    "sheep": 15,
+    "family": "canonical",
+    "case_id": "model_controls_validation_0007",
+    "condition": "N15",
+    "physics_multiplier": 1.0
+  }
+]

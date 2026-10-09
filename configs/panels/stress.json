@@ -1,0 +1,76 @@
+{
+  "schema": "experiment_panel",
+  "name": "stress",
+  "kind": "closed_loop",
+  "training_seeds": [
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208
+  ],
+  "world_manifest": "manifests/model_controls/stress.json",
+  "manifest_required": false,
+  "manifest_status": "provided_exact_reset_inputs",
+  "conditions": 36,
+  "worlds": 180,
+  "worlds_per_condition": null,
+  "episodes_per_arm": 1440,
+  "arms": {
+    "hccg_cogp": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "edge_gnn_cogp": {
+      "generator": "edge_gnn",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "agent_dag_cogp": {
+      "generator": "agent_dag",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    }
+  },
+  "statistics_families": [],
+  "include_failures": true,
+  "checkpoint_selection": "fixed checkpoint; never evaluation success",
+  "statistical_scope": "conditional on fixed worlds and frozen executor; worlds are not training replicates",
+  "sheep": 15,
+  "initial_worlds": 60,
+  "physics_multipliers": [
+    0.8,
+    1.0,
+    1.2
+  ],
+  "same_initial_world_across_multipliers": true,
+  "scope": "Local shepherd-repulsion sensitivity only; descriptive"
+}

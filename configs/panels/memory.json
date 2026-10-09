@@ -1,0 +1,103 @@
+{
+  "schema": "experiment_panel",
+  "name": "memory",
+  "kind": "closed_loop",
+  "training_seeds": [
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208
+  ],
+  "world_manifest": "manifests/memory/test.json",
+  "manifest_required": false,
+  "manifest_status": "provided_exact_reset_inputs",
+  "conditions": 48,
+  "worlds": 48,
+  "worlds_per_condition": 1,
+  "episodes_per_arm": 384,
+  "arms": {
+    "full": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "reinitialized": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "reinitialize",
+      "proposal": "native"
+    }
+  },
+  "statistics_families": [
+    {
+      "name": "prediction_memory",
+      "size": 1,
+      "unit": "paired_training_seed_mean",
+      "confidence": 0.95,
+      "df": 7,
+      "correction": "single_prespecified",
+      "contrasts": [
+        {
+          "name": "full_minus_reinitialized",
+          "coefficients": {
+            "full": 1,
+            "reinitialized": -1
+          }
+        }
+      ]
+    }
+  ],
+  "include_failures": true,
+  "checkpoint_selection": "fixed checkpoint; never evaluation success",
+  "statistical_scope": "conditional on fixed worlds and frozen executor; worlds are not training replicates",
+  "common_state_driver": "full",
+  "common_decision_indices": [
+    0,
+    2
+  ],
+  "intervention": "designated_history_group",
+  "candidate_generation_precedes_intervention": true,
+  "real_executor_modified": false,
+  "strict_fields": [
+    "_prev_high_roles",
+    "_prev_high_targets",
+    "_prev_high_collect_count",
+    "_stage_active",
+    "_stage_target",
+    "_stage_armed",
+    "_stage_hold",
+    "_rear_barrier_active",
+    "_rear_barrier_start_primitive",
+    "_rear_barrier_hold"
+  ],
+  "protected": [
+    "physics",
+    "phase",
+    "task_snapshot",
+    "feasibility",
+    "episode_time",
+    "success_counters",
+    "collision_protection",
+    "diagnostic_totals",
+    "drive_context"
+  ]
+}

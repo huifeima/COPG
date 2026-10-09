@@ -1,0 +1,12 @@
+{
+  "arm": "execution",
+  "feature_schema": "v178_execution_state_v1",
+  "identity_hash": "8ac66dcf9677d607e616f1149df500d2bdd75413c06b1e7a6e443eab88ccbd78",
+  "schema": "v178_matched_critic_v1",
+  "sha256": "3649da4d06c66360fd0b1702d97267ce9a2973e28aed0266cb92d3d4df9dac0a",
+  "study_hash": "a2ebdf4d9b0d619c292c907f9d16e9ca45339092bf100694f799925880303969",
+  "target_normalization": {
+    "mean": 63.4613716270029,
+    "std": 36.278081570754246
+  }
+}

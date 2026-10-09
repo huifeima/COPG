@@ -1,0 +1,217 @@
+{
+  "schema": "experiment_panel",
+  "name": "horizon",
+  "kind": "closed_loop",
+  "training_seeds": [
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208
+  ],
+  "world_manifest": null,
+  "manifest_required": true,
+  "manifest_status": "historical_manifest_not_supplied",
+  "conditions": 48,
+  "worlds": 480,
+  "worlds_per_condition": 10,
+  "episodes_per_arm": 3840,
+  "arms": {
+    "deepsets_cogp": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "deepsets",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "hccg_h12_e12": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 12,
+      "E": 12,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "hccg_h12_e64": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 12,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "hccg_h32_e64": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 32,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "hccg_h64_e12": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 12,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "hccg_prior_h64": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.25,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "hccg_prior_h12": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 12,
+      "E": 64,
+      "K": 4,
+      "prior": 0.25,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    },
+    "hccg_cogp": {
+      "generator": "hccg",
+      "planner": true,
+      "dynamics": "graph",
+      "critic": "original",
+      "H": 64,
+      "E": 64,
+      "K": 4,
+      "prior": 0.0,
+      "actor": "default",
+      "memory": "inherit",
+      "proposal": "native"
+    }
+  },
+  "statistics_families": [
+    {
+      "name": "original_core",
+      "size": 10,
+      "unit": "paired_training_seed_mean",
+      "confidence": 0.95,
+      "df": 7,
+      "correction": "bonferroni",
+      "contrasts": [
+        {
+          "name": "planning_vs_edge",
+          "coefficients": {
+            "hccg_cogp": 1,
+            "edge_gnn_direct": -1
+          }
+        },
+        {
+          "name": "planning_vs_dag",
+          "coefficients": {
+            "hccg_cogp": 1,
+            "agent_dag_direct": -1
+          }
+        },
+        {
+          "name": "graph_vs_deepsets",
+          "coefficients": {
+            "hccg_cogp": 1,
+            "deepsets_cogp": -1
+          }
+        },
+        {
+          "name": "long_prediction_no_prior",
+          "coefficients": {
+            "hccg_cogp": 1,
+            "hccg_h12_e64": -1
+          }
+        },
+        {
+          "name": "long_prediction_with_prior",
+          "coefficients": {
+            "hccg_prior_h64": 1,
+            "hccg_prior_h12": -1
+          }
+        },
+        {
+          "name": "execution_at_long_prediction",
+          "coefficients": {
+            "hccg_cogp": 1,
+            "hccg_h64_e12": -1
+          }
+        },
+        {
+          "name": "execution_at_short_prediction",
+          "coefficients": {
+            "hccg_h12_e12": 1,
+            "hccg_h12_e64": -1
+          }
+        },
+        {
+          "name": "prior_at_long_prediction",
+          "coefficients": {
+            "hccg_cogp": 1,
+            "hccg_prior_h64": -1
+          }
+        },
+        {
+          "name": "prior_at_short_prediction",
+          "coefficients": {
+            "hccg_h12_e64": 1,
+            "hccg_prior_h12": -1
+          }
+        },
+        {
+          "name": "prediction_by_prior",
+          "coefficients": {
+            "hccg_cogp": 1,
+            "hccg_h12_e64": -1,
+            "hccg_prior_h64": -1,
+            "hccg_prior_h12": 1
+          }
+        }
+      ]
+    }
+  ],
+  "include_failures": true,
+  "checkpoint_selection": "fixed checkpoint; never evaluation success",
+  "statistical_scope": "conditional on fixed worlds and frozen executor; worlds are not training replicates",
+  "alias_of": "original",
+  "scope": "Subset selection. Corrected original family intervals require all ten contrasts, including baseline arms."
+}

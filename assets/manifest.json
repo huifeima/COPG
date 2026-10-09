@@ -1,0 +1,610 @@
+{
+  "schema": "checkpoint_assets",
+  "assets": {
+    "records.reviewer_controls.summary.csv": {
+      "path": "records/reviewer_controls/summary.csv",
+      "sha256": "1f2cc2ecf2fce904edf3d5dc9b9d76a7afdf1a9cabf3b4f59635300fe9279014",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.reviewer_controls.study.json": {
+      "path": "records/reviewer_controls/study.json",
+      "sha256": "3d6e914a4ec8c59bffb9b6f614d71a56b921cdd801d8c2fa0ae1c061cdfbeef1",
+      "kind": "exact_world_and_model_study_metadata",
+      "companions": [],
+      "original_packaged_sha256": "b791ef1b65718e25afc71a78e66f169d135bfad0a837c2537580a2e8d9486358",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.diagnostic_summary.csv": {
+      "path": "records/reviewer_controls/diagnostic_summary.csv",
+      "sha256": "d7132c72e27a6ef062bb6fef3c47c70de5e1acfeb0ca1796590f52388ef9be84",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.reviewer_controls.paired_contrasts.csv": {
+      "path": "records/reviewer_controls/paired_contrasts.csv",
+      "sha256": "a435990c66b73c9b549ad483991c5be8649fb7b72ef5220d12db58d5fdf52865",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.reviewer_controls.diagnostic_candidates.csv": {
+      "path": "records/reviewer_controls/diagnostic_candidates.csv",
+      "sha256": "aeaf7c0335e6380fe537d97ec7a458f348e546528129a9e9bc7dd40f21a4ab3b",
+      "kind": "candidate_level_runtime_export",
+      "companions": []
+    },
+    "records.reviewer_controls.per_cell.csv": {
+      "path": "records/reviewer_controls/per_cell.csv",
+      "sha256": "7160e65b77c9347eb7d13c7db675d5ec45d8acf286e6ed042fafef74a8771e34",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.reviewer_controls.resources.json": {
+      "path": "records/reviewer_controls/resources.json",
+      "sha256": "c0b70478f40375fc7cbd5348c06d4c56690525e2f3ece7395d375dc4b1399026",
+      "kind": "aggregate_or_configuration_export",
+      "companions": [],
+      "original_packaged_sha256": "a84513c7ee4393d3398ed631c9d299b4bbac12fa0d37873c4da3a4705f2d97d8",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.selection_latency.csv": {
+      "path": "records/reviewer_controls/selection_latency.csv",
+      "sha256": "62a99daafdfcd684bd573c20b7a5ad2a5df4c686aaa1c8b1161b53f3786a6abb",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.reviewer_controls.per_seed.csv": {
+      "path": "records/reviewer_controls/per_seed.csv",
+      "sha256": "59ff08826a52c71c9438f51c6abe1ce6a4bdf253343293dfe4e18ac3f10c4932",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s201.boids_id.report.json": {
+      "path": "records/reviewer_controls/dynamics/s201/boids_id.report.json",
+      "sha256": "e27143f32cb2aafdf1ebb656c0e91273aa1f96d224a158f627cd0e0a92df1572",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s201.local_pooled.report.json": {
+      "path": "records/reviewer_controls/dynamics/s201/local_pooled.report.json",
+      "sha256": "2020c7e07b66d51f2ac6287a7bb57545b44c40ffad7b1f4be7f964f17efde449",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s206.boids_id.report.json": {
+      "path": "records/reviewer_controls/dynamics/s206/boids_id.report.json",
+      "sha256": "6062b35794f413a99c7389d98dd7341dcb9f5d6ef5378c940a32047a48f9d095",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s206.local_pooled.report.json": {
+      "path": "records/reviewer_controls/dynamics/s206/local_pooled.report.json",
+      "sha256": "3056ddeaa02a5f7727edb5651b323e64d237fdbb948ab725f92ea5a6059cd630",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s205.boids_id.report.json": {
+      "path": "records/reviewer_controls/dynamics/s205/boids_id.report.json",
+      "sha256": "00aeaa0aeeb2727b10292b7efd8954251d4f485d255f0b1799ac8876bbfa460c",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s205.local_pooled.report.json": {
+      "path": "records/reviewer_controls/dynamics/s205/local_pooled.report.json",
+      "sha256": "a24bd788d9c0cf4448f1d30f50455f06792abcbc2f378c46acf7943d483be391",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s207.boids_id.report.json": {
+      "path": "records/reviewer_controls/dynamics/s207/boids_id.report.json",
+      "sha256": "f8f49ed30ca3cd28dc3d534e234fe64d020dc9d8424f85419e30521b8122e25a",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s207.local_pooled.report.json": {
+      "path": "records/reviewer_controls/dynamics/s207/local_pooled.report.json",
+      "sha256": "fa6d252d712f6b4a41595b40e7a5adc2bed1e60c4635d96412f18b4535b19e1b",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s208.boids_id.report.json": {
+      "path": "records/reviewer_controls/dynamics/s208/boids_id.report.json",
+      "sha256": "88bd9eb510d52748a9b707d82457488b8d5e88a2a619a29a53a734ccbb42bf22",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s208.local_pooled.report.json": {
+      "path": "records/reviewer_controls/dynamics/s208/local_pooled.report.json",
+      "sha256": "449b11deb8a25c1a85e1d6aec3740e75a3ec96b50c70b0c338e969217fb3f2ae",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s203.boids_id.report.json": {
+      "path": "records/reviewer_controls/dynamics/s203/boids_id.report.json",
+      "sha256": "ee764e32cbc78634bab3fa97c1604346ddaaa6925300cafbfcf805a51017cd2e",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s203.local_pooled.report.json": {
+      "path": "records/reviewer_controls/dynamics/s203/local_pooled.report.json",
+      "sha256": "4de7f0685365ee6ae9398533e2be270e4c7c8b14d95e487fbf242b2e55a9272b",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s202.boids_id.report.json": {
+      "path": "records/reviewer_controls/dynamics/s202/boids_id.report.json",
+      "sha256": "73ac9c5db41d272f4ed9debe8c482ae00e235130fd5b4205a53325a425e8f7f0",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s202.local_pooled.report.json": {
+      "path": "records/reviewer_controls/dynamics/s202/local_pooled.report.json",
+      "sha256": "82e997c53a5e6009436cc7852f11ec8e3d00d8bb6bf183e906c0c9a1a174fd06",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s204.boids_id.report.json": {
+      "path": "records/reviewer_controls/dynamics/s204/boids_id.report.json",
+      "sha256": "9b9c175ace21c58d73c2c73865441258252e08d74a13cdfe871d974c5c88deaf",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.dynamics.s204.local_pooled.report.json": {
+      "path": "records/reviewer_controls/dynamics/s204/local_pooled.report.json",
+      "sha256": "c367e29a0e1fb34a223d544a76ca5319df0adf47e512c8ddcbae681bde296b8f",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s201.execution.json": {
+      "path": "records/reviewer_controls/critics/s201/execution.json",
+      "sha256": "bf1029f416f9bda35a8f1f91081be590cde92ea7fe293197c9ba8bb0fb810f0a",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s201.physical.json": {
+      "path": "records/reviewer_controls/critics/s201/physical.json",
+      "sha256": "042ac4b9fef6695a9741d0d701a8ae73f1437c5da55df817048140bc8b6b7119",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s201.complete.json": {
+      "path": "records/reviewer_controls/critics/s201/complete.json",
+      "sha256": "75fdf30177300e5fd507375b699ed218495c4951a8274b23613b7ae4eca9bb69",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "622057fe20f0ee4e3bf2220a50de11266a2ae6d02be746600f60bb0e4ba07ad3",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.critics.s206.execution.json": {
+      "path": "records/reviewer_controls/critics/s206/execution.json",
+      "sha256": "224f1238730ec99c31a2faafe534399125b88094e42ba5de07b2e9bd3302c42d",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s206.physical.json": {
+      "path": "records/reviewer_controls/critics/s206/physical.json",
+      "sha256": "c9a5b1a7dddf2ae82ceaa3d96bc332eabf0141a8c56ce0ddf53b7c48cba65731",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s206.complete.json": {
+      "path": "records/reviewer_controls/critics/s206/complete.json",
+      "sha256": "894cbd46b74e41aded97b0cb437a1a1db5c2efb31d64bf9a3e5d99b36f6414ad",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "5bd61b0af4aa7361c23a0a34551b5864af835c4cef1bddcf3fb240ce0484e3d8",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.critics.s205.execution.json": {
+      "path": "records/reviewer_controls/critics/s205/execution.json",
+      "sha256": "5f66f25966bee6e23ca7471520d344ac1c37ee409598dfb87108624796c814cb",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s205.physical.json": {
+      "path": "records/reviewer_controls/critics/s205/physical.json",
+      "sha256": "e5e402982d13cc9b758f28d2b08c6903ca9a9fa9519c7127f9983051a58be3c9",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s205.complete.json": {
+      "path": "records/reviewer_controls/critics/s205/complete.json",
+      "sha256": "fbefd02ae01f740c86b7e5dfcc4093f466e87ca915221400f6ae7e4f4f9144d7",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "803728a24490149b2c1844ec592e284f473494b0466c232a27c68e167c0fd067",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.critics.s207.execution.json": {
+      "path": "records/reviewer_controls/critics/s207/execution.json",
+      "sha256": "3c4ab1638d32bf50fdb1c2a76151cd568c914650c0b38f4fea914f09dcb98c5b",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s207.physical.json": {
+      "path": "records/reviewer_controls/critics/s207/physical.json",
+      "sha256": "e634290a17e45eb1fefc0419d15846fdb01cc17c56fda125943e1276b248e12f",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s207.complete.json": {
+      "path": "records/reviewer_controls/critics/s207/complete.json",
+      "sha256": "60bc07f61c7c071025f069c087883bcde76ce747484037ebd672df4f450bc19b",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "ff736dbd887f8bc4ccd4fedc1f2b49fe02a10ac64713b4ec8e419d28f5f6ef61",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.critics.s208.execution.json": {
+      "path": "records/reviewer_controls/critics/s208/execution.json",
+      "sha256": "052960f46af6b9ea0058220b56c5b44a7a57dabfac493bb3b3dcdff2d6e6ce89",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s208.physical.json": {
+      "path": "records/reviewer_controls/critics/s208/physical.json",
+      "sha256": "c54987628e3c1dbeeeb7e5f4b7cca0aef86ed8588e9256f38cde86ab39ce4e84",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s208.complete.json": {
+      "path": "records/reviewer_controls/critics/s208/complete.json",
+      "sha256": "4e59ab3b49bafdf6a9a7204906708d23f1244a9921a5abbb63f31b3ea54ce549",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "09f570e155244b857e8f4eddf55519ae7626972027d7584eca6a3901231fd8b4",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.critics.s203.execution.json": {
+      "path": "records/reviewer_controls/critics/s203/execution.json",
+      "sha256": "31dc98e6e7a70040640b9296b4738660b1961d60fc24d96e39d7dd35fa0f8ab5",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s203.physical.json": {
+      "path": "records/reviewer_controls/critics/s203/physical.json",
+      "sha256": "7746446e2ba10a4916cc543bf0b583275ffd5271b6d5f1484061e871b7acc8bb",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s203.complete.json": {
+      "path": "records/reviewer_controls/critics/s203/complete.json",
+      "sha256": "bfc5db75cbe23c73398cccfb3ba8a95a53cf826ce6a8e8699a1b4346b40679aa",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "293d24f4bdd16399ceca967b65c78d04fa08b72cb4c59dae0702ece552bfe17b",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.critics.s202.execution.json": {
+      "path": "records/reviewer_controls/critics/s202/execution.json",
+      "sha256": "fc90483cbf86ede695669f9d2ebd4ff8f26b1097e265c70bcdda5eb04dc7337c",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s202.physical.json": {
+      "path": "records/reviewer_controls/critics/s202/physical.json",
+      "sha256": "d0f75ac4a164bc33b801476e724865a1d8968b500cf66c2962b557803b784cb6",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s202.complete.json": {
+      "path": "records/reviewer_controls/critics/s202/complete.json",
+      "sha256": "ed6c75193b5fe7168fb17e8e464e6725ddb39f2724ee099bb15946717c215e2a",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "b0616eefeac21e7a2c4075183b7124f4ef1afda37cc26ed8930389642843f1de",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.critics.s204.execution.json": {
+      "path": "records/reviewer_controls/critics/s204/execution.json",
+      "sha256": "87ef572d8dd7800eaea99bc4d132e9d91ff0244fbd44423e168b9bb5f3604320",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s204.physical.json": {
+      "path": "records/reviewer_controls/critics/s204/physical.json",
+      "sha256": "e63678aa20dd9d7513c8544f08a0c2c0c78d1d150b5df3b75dc3ffdc74a85261",
+      "kind": "training_or_gate_receipt",
+      "companions": []
+    },
+    "records.reviewer_controls.critics.s204.complete.json": {
+      "path": "records/reviewer_controls/critics/s204/complete.json",
+      "sha256": "63e7ddd31b5b0a7515919a64dfe856f5c00ad742d05e52f4fc5a097ad8db667f",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "9e8476b9585637efbbd23cb186b8d6a57ffd9a42fcb2871df15864ac33e6c802",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s201.execution.complete.json": {
+      "path": "records/reviewer_controls/actors/s201/execution/complete.json",
+      "sha256": "9178555662828a0614bc3d07760ec50e4a754e121ce9e3df4f8302c3abd8417b",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "dc4fb5e51a7e0cc83351b5552bb2c06e8df15786b925e6e1b1347df73680f46a",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s201.execution.job.json": {
+      "path": "records/reviewer_controls/actors/s201/execution/job.json",
+      "sha256": "38e6e6f83ac773fbfbba92caf071f7dc7520938a1878955f4e0fc7b234dae6e4",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "fee0c3007d036a7c90299ec7c10629f50bab1d4722cd9277d4e0aa7adb80e197",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s201.physical.complete.json": {
+      "path": "records/reviewer_controls/actors/s201/physical/complete.json",
+      "sha256": "7cefb5b891e2a3d0e1b8be6de889124446492ecd47a3c111858b4712c4cde674",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "18047b83510e4f8d88237c67b29bf1972849dbadeda637bae401a91b52daadeb",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s201.physical.job.json": {
+      "path": "records/reviewer_controls/actors/s201/physical/job.json",
+      "sha256": "04fc80a2a8ab9abe70f1e689447eb372aa376af4ee53ae9686770e76147a4f3f",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "795f0c3d985a202b70013bb472f7d1c29a75d3134f23d63b5107e60dd51ba131",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s206.execution.complete.json": {
+      "path": "records/reviewer_controls/actors/s206/execution/complete.json",
+      "sha256": "922364fa05ea9de5ed91aaf1101b78593b86f19a422351c6d4a368f4b1b52049",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "b6905187a90552f679a8c3831b9f633f7fb736d83cbfdd4757b1c18cf9faeaad",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s206.physical.complete.json": {
+      "path": "records/reviewer_controls/actors/s206/physical/complete.json",
+      "sha256": "b52c52f41f46c7a720d2e915c98cbb98a22bde271ef89c76916e1808d0463e2f",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "6787319ebac31ba852bc4c1053a539b32d505af6cce7f2b61e1973454029cadf",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s205.execution.complete.json": {
+      "path": "records/reviewer_controls/actors/s205/execution/complete.json",
+      "sha256": "14167d238a40a3228f80505ea162af207edf828484913bb82050c627a08836da",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "c5efc6611e7d6f8c9b24fb85a5e5f0d2477585530ccce5d5c560cb0cfcf849ef",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s205.physical.complete.json": {
+      "path": "records/reviewer_controls/actors/s205/physical/complete.json",
+      "sha256": "9ddd0cac6ff35ac7442d1cd07f987228daa06d125a2f7a41df546da6ad1a66f3",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "99d0aa446d4382b37be8bf32aaea99228a774ef16c898b0a5eb4da199c6a4999",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s207.execution.complete.json": {
+      "path": "records/reviewer_controls/actors/s207/execution/complete.json",
+      "sha256": "333d3f48a7f0bc3982b8d570b59c5421a5bdc130bc582f7671cef1cfa974aa65",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "7fe443a476d034c780be2a516f16cf91fa05db70672002e40d2fce695ee0e765",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s207.physical.complete.json": {
+      "path": "records/reviewer_controls/actors/s207/physical/complete.json",
+      "sha256": "276acf7ebb1b25655f3088401b76ff1633474a612d8f8d25b42b156c8fdbd5e0",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "834536d04e54a5a6fbde02106f43a60d7ee26bf692a49ddf256f128fdf6b4b18",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s208.execution.complete.json": {
+      "path": "records/reviewer_controls/actors/s208/execution/complete.json",
+      "sha256": "a15a645b88be448812fb6d94d9883da989a0647e5f24c39f33f56102363b4fa1",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "003e3d5265e99e2d6af2458c8f04b4a3ed84366694a9ebd054f114aa1eea1171",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s208.physical.complete.json": {
+      "path": "records/reviewer_controls/actors/s208/physical/complete.json",
+      "sha256": "4e051ae57e6f43ab8ed3995f580249f88518cd316be39650bd627da362e2babe",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "efaf2a3cb628e560b80a2b8f9de3a7e54a5a6847eafd08b492b033a9661be695",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s203.execution.complete.json": {
+      "path": "records/reviewer_controls/actors/s203/execution/complete.json",
+      "sha256": "b307bb1c55dd317898a0903e959cd8057fa50cca12aa64e4b996ceb31d832d52",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "d81ec150fdaf7b28127272fa08392c6089ac0049154ec9cf945a34128225be38",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s203.physical.complete.json": {
+      "path": "records/reviewer_controls/actors/s203/physical/complete.json",
+      "sha256": "4b35500760edf76623a76b94074a50d3c007e69546c9431acb09d7748e340086",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "869c22250c1262448a01ab2eef32a9df579d21eb397bf7b14bc98c3222db6874",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s202.execution.complete.json": {
+      "path": "records/reviewer_controls/actors/s202/execution/complete.json",
+      "sha256": "7f908968ec455617759a80bfacdee5eb7c7389736251814b197a5bdd528cfed9",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "19143e9e272552f07871af54de0d16484849f94a9515dbf747093c72c3b4422b",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s202.physical.complete.json": {
+      "path": "records/reviewer_controls/actors/s202/physical/complete.json",
+      "sha256": "f0d9e3d4d9bb3480f1b18c9c1d4c124a146c053c40cbf736de25b55bf65f4397",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "92fcc83f43f7c91c38686fb183426dfcd5a2887883b07d68c1253a0cb6fe00dc",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s204.execution.complete.json": {
+      "path": "records/reviewer_controls/actors/s204/execution/complete.json",
+      "sha256": "7c7e87a2023011888016369b6f8502d7fe9d8e7615fca04cf76d97da4f4407ea",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "bbb30faed0f6f2a70d6007e4bb0cbb6ce86ac75ec45bbdfcc079de13f05998d3",
+      "anonymized_copy": true
+    },
+    "records.reviewer_controls.actors.s204.physical.complete.json": {
+      "path": "records/reviewer_controls/actors/s204/physical/complete.json",
+      "sha256": "e5513dd4b0cb6f8cb8b17f4c2485572d33b6eb69e0ec69f7d73f0231c1287435",
+      "kind": "training_or_gate_receipt",
+      "companions": [],
+      "original_packaged_sha256": "e31f8b7eb9839fd9d0ca4dd69c66542cd2e13c15bc777307c873c52786a0bb25",
+      "anonymized_copy": true
+    },
+    "records.execution_history.common_states_per_seed.csv": {
+      "path": "records/execution_history/common_states_per_seed.csv",
+      "sha256": "a736d858d0d0cb7360a4cf924ba7f4c6578531d13ddcf061c7b7a6b09173bf42",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.execution_history.episodes.csv": {
+      "path": "records/execution_history/episodes.csv",
+      "sha256": "613c4b9e8165e47554d3fa686420039985f648666625fb432267c96ad7b8c052",
+      "kind": "episode_level_runtime_export",
+      "companions": []
+    },
+    "records.execution_history.study.json": {
+      "path": "records/execution_history/study.json",
+      "sha256": "b501e631a1c9676f24b061c187e8bf6c05e176d397c4a1bbb32ccf9eb59a092a",
+      "kind": "exact_world_and_model_study_metadata",
+      "companions": [],
+      "original_packaged_sha256": "96362a98ee7e55028a4defc5c4da263f401913118a3760ab36c7ef83abbf0097",
+      "anonymized_copy": true
+    },
+    "records.execution_history.resources.json": {
+      "path": "records/execution_history/resources.json",
+      "sha256": "85e4c734dce747e19ff1c39a8dc5e7262b97b7bcf035e2d106396ec2de408665",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.execution_history.SUMMARY.json": {
+      "path": "records/execution_history/SUMMARY.json",
+      "sha256": "24dfcb425e29c653bc06a4e72ada8da480ae87af5f2befb0ac49e6c278a7f579",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.execution_history.per_seed.csv": {
+      "path": "records/execution_history/per_seed.csv",
+      "sha256": "460980c6ee381022cc8d852e6f7f80f5f1e85711e8689e4904e67339a4d99a3c",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.execution_history.score_components.v178192.summary.csv": {
+      "path": "records/execution_history/score_components/v178192/summary.csv",
+      "sha256": "2c75b0028b401ff25234ebe4667a5618a28caadbbd5db4f62043f7aea92eedb3",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.execution_history.score_components.v178192.state_metrics.csv": {
+      "path": "records/execution_history/score_components/v178192/state_metrics.csv",
+      "sha256": "31c84efc9e0e3730de364ffa65ab6c777780ac052edc59a92fb16ed8db576fe7",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.execution_history.score_components.v178192.paired_contrasts.csv": {
+      "path": "records/execution_history/score_components/v178192/paired_contrasts.csv",
+      "sha256": "f190eccad8afb2a8b15325eb29294d0adaa557837b31aedd4fdf12de058312ec",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.execution_history.score_components.v178192.per_seed.csv": {
+      "path": "records/execution_history/score_components/v178192/per_seed.csv",
+      "sha256": "326a13028eb496b23783547f95e6656735a02a87fba762cea05a1d1f4bcadca2",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.execution_history_details.common_states.jsonl": {
+      "path": "records/execution_history_details/common_states.jsonl",
+      "sha256": "6dd8b5791890602d067a507d267759a1804da1234891b38aeed9b4d9885864cf",
+      "kind": "candidate_level_runtime_export",
+      "companions": []
+    },
+    "records.execution_history_details.common_states_summary.csv": {
+      "path": "records/execution_history_details/common_states_summary.csv",
+      "sha256": "df0af5cbf107bf61ae6513499f5217e4d99162c01bc3c45cc261830a890b5a8a",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.execution_history_details.decisions_detail.csv": {
+      "path": "records/execution_history_details/decisions_detail.csv",
+      "sha256": "d428207ac0978f5308bf6aacda8e16438e6caafe5acbff8fbd54b65a08721466",
+      "kind": "candidate_level_runtime_export",
+      "companions": []
+    },
+    "records.execution_history_details.episodes_detail.csv": {
+      "path": "records/execution_history_details/episodes_detail.csv",
+      "sha256": "b2aead9aff589ccce8b390f13073a16c4bee013dad818101ca7b0c467923ad9d",
+      "kind": "episode_level_runtime_export",
+      "companions": []
+    },
+    "records.execution_history_details.per_seed_detail.csv": {
+      "path": "records/execution_history_details/per_seed_detail.csv",
+      "sha256": "697ee07f76d3b5d3067a69d730e195e2a6880eb5e0bea3e441bdef6dc16273cb",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "records.execution_history_details.trace_memory_field_counts.csv": {
+      "path": "records/execution_history_details/trace_memory_field_counts.csv",
+      "sha256": "3e665d0b9bc80224e63f4e28847ee3bdb59f124dca65c6e2c492277fd0c794e7",
+      "kind": "aggregate_or_configuration_export",
+      "companions": []
+    },
+    "reported_parameters.201.boids_id": {
+      "path": "reported_parameters/boids_id/s201.coefficients.json",
+      "sha256": "4d0c7a81169ebaae517e051182aeaf0e47611af6066636526d1b43e0400c3862",
+      "kind": "logged_effective_coefficients_not_original_checkpoint",
+      "companions": []
+    },
+    "reported_parameters.202.boids_id": {
+      "path": "reported_parameters/boids_id/s202.coefficients.json",
+      "sha256": "028a95263a824783850acb86d95c36251ddb2ab538121003a819b0492cd7c123",
+      "kind": "logged_effective_coefficients_not_original_checkpoint",
+      "companions": []
+    },
+    "reported_parameters.203.boids_id": {
+      "path": "reported_parameters/boids_id/s203.coefficients.json",
+      "sha256": "6ca91d38149e5a882ab8c6627d51150da187ca1d5058be98218f449ab5a11d31",
+      "kind": "logged_effective_coefficients_not_original_checkpoint",
+      "companions": []
+    },
+    "reported_parameters.204.boids_id": {
+      "path": "reported_parameters/boids_id/s204.coefficients.json",
+      "sha256": "9197991e49ec56aeb41fde44f9dd1e0212f42a2881ad4bfcb7ef7188921b77ed",
+      "kind": "logged_effective_coefficients_not_original_checkpoint",
+      "companions": []
+    },
+    "reported_parameters.205.boids_id": {
+      "path": "reported_parameters/boids_id/s205.coefficients.json",
+      "sha256": "f3eb9e4bc9ab5a20ad6e74d866fb6d2cdc8b3ef7b3def9beec2d5538a7267d73",
+      "kind": "logged_effective_coefficients_not_original_checkpoint",
+      "companions": []
+    },
+    "reported_parameters.206.boids_id": {
+      "path": "reported_parameters/boids_id/s206.coefficients.json",
+      "sha256": "d4591b026c2583dd05f3655726e6d55173d44b6e8ff258cae17498dc1b0252b4",
+      "kind": "logged_effective_coefficients_not_original_checkpoint",
+      "companions": []
+    },
+    "reported_parameters.207.boids_id": {
+      "path": "reported_parameters/boids_id/s207.coefficients.json",
+      "sha256": "297342403a71715dad5e62c937987f6bb7a3c54dcf347bcffc4275b662eea070",
+      "kind": "logged_effective_coefficients_not_original_checkpoint",
+      "companions": []
+    },
+    "reported_parameters.208.boids_id": {
+      "path": "reported_parameters/boids_id/s208.coefficients.json",
+      "sha256": "e39f554550285ce480805a5f834d437d03ff7765bb232cb1b235d8816bd67208",
+      "kind": "logged_effective_coefficients_not_original_checkpoint",
+      "companions": []
+    }
+  },
+  "scope": "Packaged experiment records and reported parameters. Register compatible external BASC policies and newly trained checkpoints with import-asset."
+}

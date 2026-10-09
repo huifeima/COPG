@@ -1,0 +1,13 @@
+reference_policy,contrast,metric,n_seeds,difference,seed_difference_sd,ci_lower,ci_upper,inference,seed_differences
+COGP_HCCG,Full COGP minus Reward-only,selected_reference_return,2,4.746834831220685,3.713568408031195,,,descriptive only,"[2.1209454275016952, 7.372724234939675]"
+COGP_HCCG,Full COGP minus Reward-only,regret,2,-4.7468348312206885,3.713568408031193,,,descriptive only,"[-2.1209454275017006, -7.372724234939677]"
+COGP_HCCG,Full COGP minus Reward-only,best_agreement,2,0.07291666666666666,0.07365695637359863,,,descriptive only,"[0.02083333333333337, 0.12499999999999994]"
+COGP_HCCG,Full COGP minus Tail-only,selected_reference_return,2,0.7116585627558578,0.40232640614705123,,,descriptive only,"[0.4271708327188648, 0.9961462927928508]"
+COGP_HCCG,Full COGP minus Tail-only,regret,2,-0.7116585627558614,0.4023264061470525,,,descriptive only,"[-0.42717083271886747, -0.9961462927928553]"
+COGP_HCCG,Full COGP minus Tail-only,best_agreement,2,0.07291666666666666,3.925231146709438e-17,,,descriptive only,"[0.07291666666666669, 0.07291666666666663]"
+HCCG,Full COGP minus Reward-only,selected_reference_return,2,1.5144968309767073,2.629483515527842,,,descriptive only,"[-0.3448287938712724, 3.373822455824687]"
+HCCG,Full COGP minus Reward-only,regret,2,-1.5144968309767037,2.629483515527845,,,descriptive only,"[0.34482879387127774, -3.373822455824685]"
+HCCG,Full COGP minus Reward-only,best_agreement,2,0.010416666666666685,0.11785113019775789,,,descriptive only,"[-0.07291666666666663, 0.09375]"
+HCCG,Full COGP minus Tail-only,selected_reference_return,2,1.8605807555316574,0.07335743539530554,,,descriptive only,"[1.912452295550132, 1.8087092155131828]"
+HCCG,Full COGP minus Tail-only,regret,2,-1.8605807555316556,0.07335743539530554,,,descriptive only,"[-1.9124522955501302, -1.808709215513181]"
+HCCG,Full COGP minus Tail-only,best_agreement,2,0.06770833333333334,0.007365695637359883,,,descriptive only,"[0.07291666666666669, 0.0625]"

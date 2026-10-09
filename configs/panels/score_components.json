@@ -1,0 +1,33 @@
+{
+  "schema": "experiment_panel",
+  "name": "score_components",
+  "kind": "offline_analysis",
+  "training_seeds": [
+    201,
+    208
+  ],
+  "world_manifest": null,
+  "manifest_required": false,
+  "manifest_status": "not_applicable",
+  "conditions": 48,
+  "worlds": null,
+  "worlds_per_condition": null,
+  "episodes_per_arm": null,
+  "arms": {},
+  "statistics_families": [],
+  "include_failures": true,
+  "checkpoint_selection": "fixed checkpoint; never evaluation success",
+  "statistical_scope": "conditional on fixed worlds and frozen executor; worlds are not training replicates",
+  "candidate_records": "paper_results/score_components/candidate_scores.csv",
+  "rules": [
+    "full",
+    "reward_only",
+    "tail_only"
+  ],
+  "states": 192,
+  "expected_candidate_count": 726,
+  "new_training": false,
+  "new_rollouts": false,
+  "native_row": false,
+  "descriptive_only": true
+}

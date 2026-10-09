@@ -1,0 +1,12 @@
+{
+  "arm": "physical",
+  "feature_schema": "v178_execution_state_v1",
+  "identity_hash": "f1ec602a4d8de40fb64fabaf52eeced33aba6bdfff9da533a6b22b8eaa2e13c9",
+  "schema": "v178_matched_critic_v1",
+  "sha256": "5ff74d536ea20d16fddd8eb7d6aec6e924617593d437f75db0ca6644e4f3087a",
+  "study_hash": "a2ebdf4d9b0d619c292c907f9d16e9ca45339092bf100694f799925880303969",
+  "target_normalization": {
+    "mean": 66.18689877450359,
+    "std": 27.404077775624152
+  }
+}
